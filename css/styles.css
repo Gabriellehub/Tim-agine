@@ -1,0 +1,134 @@
+/*----------------------------------------------------------------------------
+    generic
+----------------------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*----------------------------------------------------------------------------
+    base
+----------------------------------------------------------------------------*/
+body {
+  font:
+    1.125rem/160% "Frank Ruhl Libre",
+    sans-serif;
+  background-color: #07020d;
+  color: #fff;
+}
+/*----------------------------------------------------------------------------
+    mise en page
+----------------------------------------------------------------------------*/
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/*----------------------------------------------------------------------------
+    element
+----------------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 10px;
+}
+
+/*----------------------------------------------------------------------------
+    components
+----------------------------------------------------------------------------*/
+.header {
+  color: #07020d;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 100%;
+  z-index: 10000;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 20px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  font-size: 1.875rem;
+  color: inherit;
+}
+
+.menu {
+  color: inherit;
+}
+
+.hero {
+  height: 400px;
+  background-image: url(../images/photos/mountains.jpg);
+}
+
+.contenu .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 100px 0px;
+}
+
+.card {
+  position: relative;
+}
+
+.button {
+  background-color: #07020d;
+  color: #5db7de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #5db7de;
+  font-size: 20px;
+  padding: 30px 0px;
+}
+
+.media {
+  background-color: #272727;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  position: fixed;
+  top: 200px;
+  left: 0px;
+}
+
+.media img {
+  height: 40px;
+  width: 40px;
+}
