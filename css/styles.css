@@ -43,12 +43,6 @@ img {
   max-width: 100%;
 }
 
-ul {
-  margin: 0px;
-  list-style: none;
-  padding: 10px;
-}
-
 /*----------------------------------------------------------------------------
     components
 ----------------------------------------------------------------------------*/
@@ -131,4 +125,40 @@ ul {
 .media img {
   height: 40px;
   width: 40px;
+  display: block;
+}
+
+.media ul {
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  padding: 0;
+}
+
+.media a:hover {
+  position: relative;
+  left: 3px;
+}
+
+img.zoom {
+  max-height: 80%;
+  cursor: pointer;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
