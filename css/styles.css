@@ -150,8 +150,14 @@ img.zoom {
 }
 
 .modal {
-  position: fixed;
+  
   display: none;
+  
+}
+
+.modal.visible {
+  display: flex;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -161,8 +167,4 @@ img.zoom {
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
-
-.modal.visible {
-  display: flex;
 }
